@@ -3,7 +3,43 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.136
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LagDaemon.StoryTeller.UI", "LagDaemon.StoryTeller.UI\LagDaemon.StoryTeller.UI.csproj", "{022D9FD8-1291-4D56-9308-8DB6D5712D30}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LagDaemon.StoryTeller.UnitTests", "LagDaemon.StoryTeller.UnitTests\LagDaemon.StoryTeller.UnitTests.csproj", "{8EDF4429-251A-416D-BB68-93F227191BCF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LagDaemon.StoryTeller.DataStore", "LagDaemon.StoryTeller.DataStore\LagDaemon.StoryTeller.DataStore.csproj", "{8523596C-E12A-447B-B6B9-555DD9468EC7}"
+EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "LagDaemon.StoryTeller.AI", "LagDaemon.StoryTeller.AI\LagDaemon.StoryTeller.AI.fsproj", "{897A03D6-7F2D-4F91-A97B-2D855767583B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LagDaemon.StoryTeller.Utilities", "LagDaemon.StoryTeller.Utilities\LagDaemon.StoryTeller.Utilities.csproj", "{169527BA-C75C-43B3-9EF7-553AFAB41962}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{022D9FD8-1291-4D56-9308-8DB6D5712D30}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{022D9FD8-1291-4D56-9308-8DB6D5712D30}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{022D9FD8-1291-4D56-9308-8DB6D5712D30}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{022D9FD8-1291-4D56-9308-8DB6D5712D30}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8EDF4429-251A-416D-BB68-93F227191BCF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8EDF4429-251A-416D-BB68-93F227191BCF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8EDF4429-251A-416D-BB68-93F227191BCF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8EDF4429-251A-416D-BB68-93F227191BCF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8523596C-E12A-447B-B6B9-555DD9468EC7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8523596C-E12A-447B-B6B9-555DD9468EC7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8523596C-E12A-447B-B6B9-555DD9468EC7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8523596C-E12A-447B-B6B9-555DD9468EC7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{897A03D6-7F2D-4F91-A97B-2D855767583B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{897A03D6-7F2D-4F91-A97B-2D855767583B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{897A03D6-7F2D-4F91-A97B-2D855767583B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{897A03D6-7F2D-4F91-A97B-2D855767583B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{169527BA-C75C-43B3-9EF7-553AFAB41962}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{169527BA-C75C-43B3-9EF7-553AFAB41962}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{169527BA-C75C-43B3-9EF7-553AFAB41962}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{169527BA-C75C-43B3-9EF7-553AFAB41962}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
