@@ -8,7 +8,7 @@
     <OutputType>Exe</OutputType>
     <RootNamespace>LagDaemon.StoryTeller.UI</RootNamespace>
     <AssemblyName>LagDaemon.StoryTeller.UI</AssemblyName>
-    <TargetFrameworkVersion>v4.7.1</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <WarningLevel>4</WarningLevel>
@@ -29,6 +29,7 @@
     <IsWebBootstrapper>false</IsWebBootstrapper>
     <UseApplicationTrust>false</UseApplicationTrust>
     <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -73,6 +74,7 @@
     <Reference Include="System.Data" />
     <Reference Include="System.Runtime.Remoting" />
     <Reference Include="System.Web" />
+    <Reference Include="System.Windows.Controls.Ribbon" />
     <Reference Include="System.Xml" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Core" />
@@ -103,12 +105,10 @@
     <Compile Include="Utilities\RelayCommand.cs" />
     <Compile Include="Utilities\ViewActivatorFacility.cs" />
     <Compile Include="Utilities\WPFWindowActivator.cs" />
+    <Compile Include="ViewModels\DelegateCommand.cs" />
     <Compile Include="ViewModels\DockWindowViewModel.cs" />
     <Compile Include="ViewModels\DockManagerViewModel.cs" />
-    <Compile Include="ViewModels\FileMenuItemViewModel.cs" />
-    <Compile Include="ViewModels\MenuItemViewModel.cs" />
-    <Compile Include="ViewModels\NewMenuItemViewModel.cs" />
-    <Compile Include="ViewModels\SeparatorViewModel.cs" />
+    <Compile Include="ViewModels\RibbonViewModel.cs" />
     <Compile Include="ViewModels\ViewModelBase.cs" />
     <Compile Include="Views\SimpleWindow.xaml.cs">
       <DependentUpon>SimpleWindow.xaml</DependentUpon>
@@ -166,6 +166,10 @@
     <Folder Include="UserControls\" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\LagDaemon.StoryTeller.CustomControls\LagDaemon.StoryTeller.CustomControls.csproj">
+      <Project>{55134906-68ba-4721-a616-be655fb3ead5}</Project>
+      <Name>LagDaemon.StoryTeller.CustomControls</Name>
+    </ProjectReference>
     <ProjectReference Include="..\LagDaemon.StoryTeller.DataStore\LagDaemon.StoryTeller.DataStore.csproj">
       <Project>{8523596c-e12a-447b-b6b9-555dd9468ec7}</Project>
       <Name>LagDaemon.StoryTeller.DataStore</Name>

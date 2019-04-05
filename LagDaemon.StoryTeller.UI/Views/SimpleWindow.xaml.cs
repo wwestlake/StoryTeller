@@ -22,7 +22,7 @@ namespace LagDaemon.StoryTeller.UI.Views
     /// </summary>
     public partial class SimpleWindow : UserControl, IView 
     {
-        public SimpleWindow(DockWindowViewModel vm)
+        public SimpleWindow()
         {
             InitializeComponent();
         }

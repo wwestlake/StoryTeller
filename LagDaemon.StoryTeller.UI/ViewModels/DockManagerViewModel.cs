@@ -14,12 +14,20 @@ namespace LagDaemon.StoryTeller.UI.ViewModels
 
         public DockManagerViewModel()
         {
-            Documents = new ObservableCollection<IView>();
+            Documents = new ObservableCollection<ViewModelBase>();
             var vm = new DockWindowViewModel { Title = "Test Window" };
-            Documents.Add(new SimpleWindow(vm) { DataContext = vm } );
+            Documents.Add(vm);
+            Tabs.Add(new RibbonTabViewModel() { Title = "File" });
+            Tabs.Add(new RibbonTabViewModel() { Title = "Edit" });
+            Tabs.Add(new RibbonTabViewModel() { Title = "View" });
+            Tabs.Add(new RibbonTabViewModel() { Title = "Tools" });
+            Tabs.Add(new RibbonTabViewModel() { Title = "Project" });
+            Tabs.Add(new RibbonTabViewModel() { Title = "Help" });
         }
 
-        public ObservableCollection<IView> Documents { get; private set; }
+        public ObservableCollection<RibbonTabViewModel> Tabs { get; private set; } = new ObservableCollection<RibbonTabViewModel>();
+
+        public ObservableCollection<ViewModelBase> Documents { get; private set; }
         public string Title { get { return "Test"; } }
     }
 }

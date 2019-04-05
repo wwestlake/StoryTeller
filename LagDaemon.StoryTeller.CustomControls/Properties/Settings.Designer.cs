@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace LagDaemon.StoryTeller.UI.Properties {
+namespace LagDaemon.StoryTeller.CustomControls.Properties {
     
     
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]

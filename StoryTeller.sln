@@ -13,6 +13,8 @@ Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "LagDaemon.StoryTeller.AI", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LagDaemon.StoryTeller.Utilities", "LagDaemon.StoryTeller.Utilities\LagDaemon.StoryTeller.Utilities.csproj", "{169527BA-C75C-43B3-9EF7-553AFAB41962}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LagDaemon.StoryTeller.CustomControls", "LagDaemon.StoryTeller.CustomControls\LagDaemon.StoryTeller.CustomControls.csproj", "{55134906-68BA-4721-A616-BE655FB3EAD5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{169527BA-C75C-43B3-9EF7-553AFAB41962}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{169527BA-C75C-43B3-9EF7-553AFAB41962}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{169527BA-C75C-43B3-9EF7-553AFAB41962}.Release|Any CPU.Build.0 = Release|Any CPU
+		{55134906-68BA-4721-A616-BE655FB3EAD5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{55134906-68BA-4721-A616-BE655FB3EAD5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{55134906-68BA-4721-A616-BE655FB3EAD5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{55134906-68BA-4721-A616-BE655FB3EAD5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

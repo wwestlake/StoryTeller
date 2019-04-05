@@ -4,6 +4,7 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:LagDaemon.StoryTeller.UI"
+        xmlns:views="clr-namespace:LagDaemon.StoryTeller.UI.Views"        
         x:Class="LagDaemon.StoryTeller.UI.Views.MainWindow"
         mc:Ignorable="d"
         xmlns:vm="clr-namespace:LagDaemon.StoryTeller.UI.ViewModels"
@@ -11,28 +12,24 @@
         Title="MainWindow" Height="450" Width="800">
 
     <Grid>
+        <Grid.Resources>
+            <Style TargetType="{x:Type Ribbon}">
+                <Setter Property="ItemsSource" Value="{Binding Tabs}" />
+                    
+            </Style>
+
+        
+            
+            
+        </Grid.Resources>
+        
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto" />
             <RowDefinition Height="*" />
         </Grid.RowDefinitions>
-        <Menu Grid.Row="0" DataContext="{Binding Path=Menues}">
-            <MenuItem ItemsSource="{Binding Path=ChildMenuItems}" Header="{Binding Path=Header}">
-                <MenuItem.Resources>
-                    <HierarchicalDataTemplate DataType="{x:Type vm:MenuItemViewModel}" ItemsSource="{Binding ChildMenuItems}">
-                        <MenuItem Header="{Binding Path=Header}" Command="{Binding Path=Command}"/>
-                    </HierarchicalDataTemplate>
-                    <DataTemplate DataType="{x:Type vm:SeparatorViewModel}">
-                        <Separator>
-                            <Separator.Template>
-                                <ControlTemplate>
-                                    <Line X1="0" X2="1" Stroke="Black" StrokeThickness="1" Stretch="Fill"/>
-                                </ControlTemplate>
-                            </Separator.Template>
-                        </Separator>
-                    </DataTemplate>
-                </MenuItem.Resources>
-            </MenuItem>
-        </Menu>
+
+
+
         <xcad:DockingManager Grid.Row="1" 
                              DataContext="{Binding DockManagerViewModel}"
                              DocumentsSource="{Binding Documents}"
@@ -44,10 +41,17 @@
                     <Setter Property="Title" Value="{Binding Model.Title}" />
                     <Setter Property="CloseCommand" Value="{Binding Model.CloseCommand}" />
                     <Setter Property="CanClose" Value="{Binding Model.CanClose}" />
+                    
                 </Style>
             </xcad:DockingManager.LayoutItemContainerStyle>
 
-
+            <xcad:DockingManager.Resources>
+                <DataTemplate DataType="{x:Type vm:DockWindowViewModel}">
+                    <views:SimpleWindow  />
+                </DataTemplate>
+            </xcad:DockingManager.Resources>
+            
+            
         </xcad:DockingManager>
 
     </Grid>
